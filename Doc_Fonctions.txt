@@ -1,0 +1,57 @@
+Documentation fonctions
+
+1. Fonction split
+
+La fonction split prend 5 paramètres en argument. Elle ne retourne rien mais construit le "dictionnaire" en associant clé et valeur.
+Paramètres nécessaires au bon fonctionnement de la fonction : 
+- sep : séparateur (défini dans les métadonnées).
+- txt : chaîne de caractère (pointeur vers chaîne de caractère) que l'on veut "spliter".
+- nbFields : nombre maimal de champs contenus dans une ligne.
+- key : champ qui accueille la clé.
+- schema_field_table : pointeur vers liste de champs, qui accueille les champs à stocker.
+
+2. Fonction print_tuples
+
+La fonction print_tuples prend 3 paramètres en argument. Elle doit montrer un affichage comme demandé sur le sujet du projet Fil Rouge.
+Paramètres nécessairesau bon fonctionnement de la fonction :
+- data : fait accéder aux noms des champs, au nombre de champs, et aux clés.
+- dico : pointeur vers une liste de tuples (dictionnaire).
+- jey : clé à chercher dans le dictionnaire.
+
+3. Fonction print_hastable
+
+4. Fonction isEmpty
+
+La fonction isEmpty prend un paramètre en argument. Elle retourne un booléen selon si la liste passée en argument est vide ou non.
+
+5. Fonction getFirstVal
+
+La fonction getFirstVal prend un paramètre en argument. Elle retourne la première valeur de la liste passé en argument, qui est un tuple.
+
+6. Fonction showList
+
+La fonction showList prend un paramètre en argument. Elle ne retourne rien mais montre la liste passée en argument.
+
+7. Fonction newList
+
+La fonction newList ne prend aucun paramètre en argument. Elle retourne une liste.
+
+8. Fonction addHeadNode
+
+La fonction addHeadNode prend deux paramètres en argument. Elle retourne 
+
+9. Fonction removeHeadNode
+
+10. Fonction first_ASCII
+
+/* 	first_ASCII takes two parameters :
+	- a key
+	- a t_hashtable object holding the information about the hashtable
+Returns the ASCII code of its first character mod hash.nbslots */
+
+11. Fonction sum_ASCII
+
+/* 	sum_ASCII takes two parameters :
+	- a key
+	- a t_hashtable object holding the information about the hashtable
+Returns the sum of the ASCII codes of all the characters in key mod hash.nbslots */
