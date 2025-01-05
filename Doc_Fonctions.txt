@@ -20,7 +20,8 @@ Paramètres nécessairesau bon fonctionnement de la fonction :
 
 3. Fonction print_hastable
 
-La fonction print_hastable prend 4 paramètres en argument. Elle permet de rechercher une clé dans une table de hachage en calculant son index à l’aide d’une fonction de hachage, puis en parcourant la liste chaînée correspondante. Si la clé est trouvée, les informations associées (champs et valeurs) sont affichées, sinon un message d’échec est retourné.
+La fonction print_hastable prend 4 paramètres en argument. Elle doit rechercher une clé dans une table de hachage en calculant son index.
+Si la clé est trouvée, la fonction affiche les informations associées (champs et valeurs), sinon elle affioche un message d’erreur.
 Paramètres nécessaires au bon fonctionnement de la fonction :
 - hashFunctionList : pointeur vers une liste de fonctions de hachage disponibles.
 - data : structure contenant les métadonnées (nom des champs, nombre de champs, clé).
