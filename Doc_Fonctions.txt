@@ -20,6 +20,13 @@ Paramètres nécessairesau bon fonctionnement de la fonction :
 
 3. Fonction print_hastable
 
+La fonction print_hastable prend 4 paramètres en argument. Elle permet de rechercher une clé dans une table de hachage en calculant son index à l’aide d’une fonction de hachage, puis en parcourant la liste chaînée correspondante. Si la clé est trouvée, les informations associées (champs et valeurs) sont affichées, sinon un message d’échec est retourné.
+Paramètres nécessaires au bon fonctionnement de la fonction :
+- hashFunctionList : pointeur vers une liste de fonctions de hachage disponibles.
+- data : structure contenant les métadonnées (nom des champs, nombre de champs, clé).
+- hash : table de hachage utilisée pour rechercher les tuples (contenu dans des listes chaînées).
+- key : clé à rechercher dans la table de hachage.
+
 4. Fonction isEmpty
 
 La fonction isEmpty prend un paramètre en argument. Elle retourne un booléen selon si la liste passée en argument est vide ou non.
