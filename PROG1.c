@@ -47,7 +47,7 @@ t_metadata read_metadata(FILE *file) {
     char temp[MAXLEN];
 
     while (fgets(temp, MAXLEN, file)) { //Lire chaque ligne du fichier
-        if (temp[0] == '#') continue;
+        if (temp[0] == '#') continue; //ignorer les commentaires
         if (meta.sep == '\0') { //lire le séparateur
             meta.sep = temp[0];
             continue;
@@ -136,7 +136,7 @@ void print_result(t_metadata *meta, t_tuple *tuple, int comparisons) {
 // BOUCLE PRINCIPALE
 
 int main(int argc, char **argv) {
-    if (argc < 2) { 
+    if (argc < 2) { //vérifie que les arguments nécessaires sont remplis
         fprintf(stderr, "Usage: %s <fichier>\n", argv[0]);
         return 1;
     }
