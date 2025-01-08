@@ -38,7 +38,7 @@ t_metadata read_metadata(FILE *file); //lecture des métadonnées à partir du f
 t_tupletable *insert_tuple(t_tupletable *table, t_tuple tuple); //Insérer un tuple dans la table
 t_tupletable *load_tuples(FILE *file, t_metadata *meta); //Charger les tuples depuis le fichier en utilisant les métadonnées
 int search_key(t_tupletable *table, t_key key, int *comparisons); //Rechercher une clé dans la table et compter les comparaisons effectuées
-void print_result(t_metadata *meta, t_tuple *tuple, int comparisons) 
+void print_result(t_metadata *meta, t_tuple *tuple, int comparisons);
 
 // LECTURE DES METADONNEES
 
