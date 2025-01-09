@@ -65,6 +65,10 @@ int hash1(char *key, int nbSlots) {
     return sum % nbSlots; //retourne l'indice de slot
 }
 
+int hash2(char *key, int nbSlots) {
+    return key[0] % nbSlots;
+}
+
 // Initialisation d'une table de hachage
 t_hashtable *initHashTable(int nbSlots, char *hashfunction) {
     t_hashtable *table = malloc(sizeof(t_hashtable)); //alloue la mémoire
@@ -140,8 +144,13 @@ int main(int argc, char *argv[]) {
     char *filename = argv[1]; //récupère le nom du fichier
     int nbSlots = atoi(argv[2]);//récupère nb de slots
 
+    char * tabfonc[2] = {"hash1", "hash2"}; // Liste de fonctions de hachage
+    
     // Initialisation de la table de hachage
-    t_hashtable *table = initHashTable(nbSlots, "hash1");
+    int nb_func = 0;
+	printf("Choisir fonction de hachage :\n");
+	scanf("%d", &nb_func);
+	t_hashtable *table = initHashTable(nbSlots, tabfonc[nb_func]);
 
     // Lecture du fichier
     FILE *file = fopen(filename, "r");//ouvre le fichier en lecture
